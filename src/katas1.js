@@ -45,7 +45,7 @@ console.log(oddsToTwenty())
 function multiplesOfFive() {
     let multiplos=[];
     for(let valorMultiplos=0; valorMultiplos<=100; valorMultiplos++){
-        if (valorMultiplos %5 ===0){
+        if (valorMultiplos %5 ===0 && valorMultiplos <=100){
             multiplos.push(valorMultiplos)
         }
     
@@ -60,7 +60,9 @@ function squareNumbers(){
     let valorPerfeito=[]
     
     for(let NumPerf = 1; NumPerf <=100; NumPerf++){
-        if (Number.isInteger(Math.sqrt(NumPerf))){
+        if 
+        // (soma NumPerf * NumPerf)
+        (Number.isInteger(Math.sqrt(NumPerf))){
             valorPerfeito.push(NumPerf)
         } 
     }
@@ -113,7 +115,7 @@ console.log(oddNumbersBackwards())
 function multiplesOfFiveBackwards() {
     let multiplos=[];
     for(let valorMultiplos=100; valorMultiplos>=0; valorMultiplos--){
-        if (valorMultiplos %5 ===0){
+        if (valorMultiplos %5 ===0 && valorMultiplos >=0){
             multiplos.push(valorMultiplos)
         }
     
